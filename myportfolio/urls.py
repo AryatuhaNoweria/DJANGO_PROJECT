@@ -17,9 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from home.views import indexpage, aboutpage, projectspage
+from calculate.views import calcpage
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',indexpage),
     path ('about/',aboutpage),
     path("projects/",projectspage),
+    path("calc/",calcpage),
 ]
